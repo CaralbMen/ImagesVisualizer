@@ -7,14 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace application
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void btn_entrar_Click(object sender, EventArgs e)
+        {
+            if(txt_usuario.Text == "")
+            {
+                MessageBox.Show("Ingresa tu nombre de usuario");
+            }
+            if(txt_pwd.Text == "")
+            {
+                MessageBox.Show("Ingresa tu contraseña");
+            }
+            using (MySqlConnection connection = Connection.GetConnection())
+            {
+                try
+                {
+                    connection.Open();
+                    MessageBox.Show("Conexión exitosa a la base de datos");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                }
+            }
         }
     }
 }
