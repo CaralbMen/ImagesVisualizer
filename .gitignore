@@ -8,6 +8,11 @@ bin/
 obj/
 Debug/
 Release/
+*.exe
+*.dll
+*.log
+*.tmp
+
 
 # Logs
 *.log
@@ -19,3 +24,5 @@ Release/
 
 #Enviorment
 *.env
+
+
