@@ -58,6 +58,9 @@ namespace application
                                                 command.ExecuteNonQuery();
                                             }
                                             MessageBox.Show("Usuario registrado exitosamente");
+                                            Form menu = new Menu(txt_usuario.Text);
+                                            menu.Show();
+                                            this.Close();
                                         }
                                         catch (Exception ex)
                                         {

@@ -30,7 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.link_register = new System.Windows.Forms.LinkLabel();
-            this.link_forgot_pwd = new System.Windows.Forms.LinkLabel();
             this.btn_entrar = new System.Windows.Forms.Button();
             this.txt_pwd = new System.Windows.Forms.TextBox();
             this.txt_usuario = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.link_register);
-            this.groupBox1.Controls.Add(this.link_forgot_pwd);
             this.groupBox1.Controls.Add(this.btn_entrar);
             this.groupBox1.Controls.Add(this.txt_pwd);
             this.groupBox1.Controls.Add(this.txt_usuario);
@@ -69,17 +67,6 @@
             this.link_register.Text = "Registrarme";
             this.link_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // link_forgot_pwd
-            // 
-            this.link_forgot_pwd.AutoSize = true;
-            this.link_forgot_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_forgot_pwd.Location = new System.Drawing.Point(100, 396);
-            this.link_forgot_pwd.Name = "link_forgot_pwd";
-            this.link_forgot_pwd.Size = new System.Drawing.Size(195, 20);
-            this.link_forgot_pwd.TabIndex = 6;
-            this.link_forgot_pwd.TabStop = true;
-            this.link_forgot_pwd.Text = "Olvidaste tu contraseña?";
-            // 
             // btn_entrar
             // 
             this.btn_entrar.BackColor = System.Drawing.Color.Gray;
@@ -97,15 +84,16 @@
             // txt_pwd
             // 
             this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd.Location = new System.Drawing.Point(101, 351);
+            this.txt_pwd.Location = new System.Drawing.Point(101, 369);
             this.txt_pwd.Name = "txt_pwd";
             this.txt_pwd.Size = new System.Drawing.Size(286, 30);
             this.txt_pwd.TabIndex = 4;
+            this.txt_pwd.UseSystemPasswordChar = true;
             // 
             // txt_usuario
             // 
             this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(101, 236);
+            this.txt_usuario.Location = new System.Drawing.Point(101, 254);
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.Size = new System.Drawing.Size(286, 30);
             this.txt_usuario.TabIndex = 3;
@@ -114,7 +102,7 @@
             // 
             this.lbl_pwd.AutoSize = true;
             this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd.Location = new System.Drawing.Point(98, 311);
+            this.lbl_pwd.Location = new System.Drawing.Point(98, 329);
             this.lbl_pwd.Name = "lbl_pwd";
             this.lbl_pwd.Size = new System.Drawing.Size(120, 25);
             this.lbl_pwd.TabIndex = 2;
@@ -124,7 +112,7 @@
             // 
             this.lbl_usuario.AutoSize = true;
             this.lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_usuario.Location = new System.Drawing.Point(98, 199);
+            this.lbl_usuario.Location = new System.Drawing.Point(98, 217);
             this.lbl_usuario.Name = "lbl_usuario";
             this.lbl_usuario.Size = new System.Drawing.Size(90, 25);
             this.lbl_usuario.TabIndex = 1;
@@ -166,7 +154,6 @@
         private System.Windows.Forms.Label lbl_usuario;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.LinkLabel link_register;
-        private System.Windows.Forms.LinkLabel link_forgot_pwd;
     }
 }
 

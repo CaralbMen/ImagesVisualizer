@@ -47,7 +47,32 @@ namespace application
                     try
                     {
                         connection.Open();
-                        MessageBox.Show("Conexión exitosa a la base de datos");
+                        String query = "SELECT * FROM usuarios WHERE username = @username";
+                        using(MySqlCommand command = new MySqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@username", txt_usuario.Text);
+                            using (MySqlDataReader reader = command.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    String hashedPwd = reader.GetString("pwd");
+                                    if (BCrypt.Net.BCrypt.Verify(txt_pwd.Text, hashedPwd))
+                                    {
+                                        Form menu = new Menu(txt_usuario.Text);
+                                        menu.Show(); this.Hide();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Contraseña incorrecta");
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Usuario no encontrado");
+                                }
+                            }
+                        }
+                        //MessageBox.Show("Conexión exitosa a la base de datos");
                     }
                     catch (Exception ex)
                     {
