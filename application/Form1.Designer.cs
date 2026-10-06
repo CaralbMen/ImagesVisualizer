@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.title = new System.Windows.Forms.Label();
-            this.lbl_usuario = new System.Windows.Forms.Label();
-            this.lbl_pwd = new System.Windows.Forms.Label();
-            this.txt_usuario = new System.Windows.Forms.TextBox();
-            this.txt_pwd = new System.Windows.Forms.TextBox();
-            this.btn_entrar = new System.Windows.Forms.Button();
-            this.link_forgot_pwd = new System.Windows.Forms.LinkLabel();
             this.link_register = new System.Windows.Forms.LinkLabel();
+            this.link_forgot_pwd = new System.Windows.Forms.LinkLabel();
+            this.btn_entrar = new System.Windows.Forms.Button();
+            this.txt_pwd = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.lbl_pwd = new System.Windows.Forms.Label();
+            this.lbl_usuario = new System.Windows.Forms.Label();
+            this.title = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,52 +57,28 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // title
+            // link_register
             // 
-            this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(180, 91);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(115, 60);
-            this.title.TabIndex = 0;
-            this.title.Text = "Login";
-            this.title.Click += new System.EventHandler(this.label1_Click);
+            this.link_register.AutoSize = true;
+            this.link_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.link_register.Location = new System.Drawing.Point(173, 562);
+            this.link_register.Name = "link_register";
+            this.link_register.Size = new System.Drawing.Size(101, 20);
+            this.link_register.TabIndex = 7;
+            this.link_register.TabStop = true;
+            this.link_register.Text = "Registrarme";
+            this.link_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // lbl_usuario
+            // link_forgot_pwd
             // 
-            this.lbl_usuario.AutoSize = true;
-            this.lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_usuario.Location = new System.Drawing.Point(98, 199);
-            this.lbl_usuario.Name = "lbl_usuario";
-            this.lbl_usuario.Size = new System.Drawing.Size(90, 25);
-            this.lbl_usuario.TabIndex = 1;
-            this.lbl_usuario.Text = "Usuario: ";
-            // 
-            // lbl_pwd
-            // 
-            this.lbl_pwd.AutoSize = true;
-            this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd.Location = new System.Drawing.Point(98, 311);
-            this.lbl_pwd.Name = "lbl_pwd";
-            this.lbl_pwd.Size = new System.Drawing.Size(120, 25);
-            this.lbl_pwd.TabIndex = 2;
-            this.lbl_pwd.Text = "Contraseña:";
-            // 
-            // txt_usuario
-            // 
-            this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(101, 236);
-            this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(286, 30);
-            this.txt_usuario.TabIndex = 3;
-            // 
-            // txt_pwd
-            // 
-            this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd.Location = new System.Drawing.Point(101, 351);
-            this.txt_pwd.Name = "txt_pwd";
-            this.txt_pwd.Size = new System.Drawing.Size(286, 30);
-            this.txt_pwd.TabIndex = 4;
+            this.link_forgot_pwd.AutoSize = true;
+            this.link_forgot_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.link_forgot_pwd.Location = new System.Drawing.Point(100, 396);
+            this.link_forgot_pwd.Name = "link_forgot_pwd";
+            this.link_forgot_pwd.Size = new System.Drawing.Size(195, 20);
+            this.link_forgot_pwd.TabIndex = 6;
+            this.link_forgot_pwd.TabStop = true;
+            this.link_forgot_pwd.Text = "Olvidaste tu contraseña?";
             // 
             // btn_entrar
             // 
@@ -118,28 +94,52 @@
             this.btn_entrar.UseVisualStyleBackColor = false;
             this.btn_entrar.Click += new System.EventHandler(this.btn_entrar_Click);
             // 
-            // link_forgot_pwd
+            // txt_pwd
             // 
-            this.link_forgot_pwd.AutoSize = true;
-            this.link_forgot_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_forgot_pwd.Location = new System.Drawing.Point(100, 396);
-            this.link_forgot_pwd.Name = "link_forgot_pwd";
-            this.link_forgot_pwd.Size = new System.Drawing.Size(195, 20);
-            this.link_forgot_pwd.TabIndex = 6;
-            this.link_forgot_pwd.TabStop = true;
-            this.link_forgot_pwd.Text = "Olvidaste tu contraseña?";
+            this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_pwd.Location = new System.Drawing.Point(101, 351);
+            this.txt_pwd.Name = "txt_pwd";
+            this.txt_pwd.Size = new System.Drawing.Size(286, 30);
+            this.txt_pwd.TabIndex = 4;
             // 
-            // link_register
+            // txt_usuario
             // 
-            this.link_register.AutoSize = true;
-            this.link_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_register.Location = new System.Drawing.Point(173, 562);
-            this.link_register.Name = "link_register";
-            this.link_register.Size = new System.Drawing.Size(101, 20);
-            this.link_register.TabIndex = 7;
-            this.link_register.TabStop = true;
-            this.link_register.Text = "Registrarme";
-            this.link_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_usuario.Location = new System.Drawing.Point(101, 236);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(286, 30);
+            this.txt_usuario.TabIndex = 3;
+            // 
+            // lbl_pwd
+            // 
+            this.lbl_pwd.AutoSize = true;
+            this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pwd.Location = new System.Drawing.Point(98, 311);
+            this.lbl_pwd.Name = "lbl_pwd";
+            this.lbl_pwd.Size = new System.Drawing.Size(120, 25);
+            this.lbl_pwd.TabIndex = 2;
+            this.lbl_pwd.Text = "Contraseña:";
+            // 
+            // lbl_usuario
+            // 
+            this.lbl_usuario.AutoSize = true;
+            this.lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_usuario.Location = new System.Drawing.Point(98, 199);
+            this.lbl_usuario.Name = "lbl_usuario";
+            this.lbl_usuario.Size = new System.Drawing.Size(90, 25);
+            this.lbl_usuario.TabIndex = 1;
+            this.lbl_usuario.Text = "Usuario: ";
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(180, 91);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(111, 58);
+            this.title.TabIndex = 0;
+            this.title.Text = "Login";
+            this.title.Click += new System.EventHandler(this.label1_Click);
             // 
             // LoginForm
             // 
@@ -148,6 +148,7 @@
             this.ClientSize = new System.Drawing.Size(485, 698);
             this.Controls.Add(this.groupBox1);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

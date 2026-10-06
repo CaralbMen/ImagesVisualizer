@@ -25,29 +25,34 @@ namespace application
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            Form register = new Register();
+            register.Show();
+            this.Hide();
         }
 
         private void btn_entrar_Click(object sender, EventArgs e)
         {
-            if(txt_usuario.Text == "")
+            if (txt_usuario.Text == "")
             {
                 MessageBox.Show("Ingresa tu nombre de usuario");
             }
-            if(txt_pwd.Text == "")
+            else if (txt_pwd.Text == "")
             {
                 MessageBox.Show("Ingresa tu contraseña");
             }
-            using (MySqlConnection connection = Connection.GetConnection())
+            else
             {
-                try
+                using (MySqlConnection connection = Connection.GetConnection())
                 {
-                    connection.Open();
-                    MessageBox.Show("Conexión exitosa a la base de datos");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                    try
+                    {
+                        connection.Open();
+                        MessageBox.Show("Conexión exitosa a la base de datos");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                    }
                 }
             }
         }
