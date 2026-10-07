@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 
 namespace application
 {
@@ -103,6 +105,37 @@ namespace application
                 videoSource.SignalToStop();
                 videoSource.WaitForStop();
                 btn_encender.Text = "Encender Camara";
+            }
+        }
+        public static int[,,] GetRGBMatrix(Bitmap bmp)
+        {
+            int width = bmp.Width;
+            int height = bmp.Height;
+
+            int[,,] rgbMatrix = new int[height, width, 3];
+
+            for (int y = 0; y < height; y++)
+            {
+                for (int x = 0; x < width; x++)
+                {
+                    Color pixel = bmp.GetPixel(x, y);
+                    rgbMatrix[y, x, 0] = pixel.R;
+                    rgbMatrix[y, x, 1] = pixel.G;
+                    rgbMatrix[y, x, 2] = pixel.B;
+                }
+            }
+
+            return rgbMatrix;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(pcb_Img.Image != null) { 
+                Bitmap bmp = new Bitmap(pcb_Img.Image);
+                int[,,] rgbMatrix = GetRGBMatrix(bmp);
+
+                String jsonMatrix = JsonConvert.SerializeObject(rgbMatrix);
+
+                using(MySqlConnection conn = Connection.GetConnection())
             }
         }
     }
