@@ -11,4 +11,13 @@ create table usuarios(
     email varchar(60),
     pwd text
 );
+drop table imagenes;
+create table imagenes(
+	id int auto_increment primary key,
+    id_usuario int,
+    imagen longtext,
+    constraint fk_ui foreign key(id_usuario) references usuarios(id)
+);
+
 select * from usuarios;
+select * from imagenes;

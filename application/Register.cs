@@ -53,6 +53,7 @@ namespace application
                                                 {
                                                     try
                                                     {
+                                                        long newId = 0;
                                                         connection.Open();
                                                         String hashedPwd = BCrypt.Net.BCrypt.HashPassword(txt_pwd.Text);
                                                         string query = "INSERT INTO usuarios (nombre, apaterno, amaterno, username, email, pwd) VALUES (@nombre, @apaterno, @amaterno, @username, @email, @password)";
@@ -65,9 +66,10 @@ namespace application
                                                             command.Parameters.AddWithValue("@email", txt_correo.Text);
                                                             command.Parameters.AddWithValue("@password", hashedPwd);
                                                             command.ExecuteNonQuery();
+                                                            newId = command.LastInsertedId;
                                                         }
                                                         MessageBox.Show("Usuario registrado exitosamente");
-                                                        Form menu = new Menu(txt_usuario.Text);
+                                                        Form menu = new Menu(txt_usuario.Text, newId);
                                                         menu.Show();
                                                         this.Close();
                                                     }

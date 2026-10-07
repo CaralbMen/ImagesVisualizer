@@ -51,7 +51,7 @@ namespace application
                                     String hashedPwd = reader.GetString("pwd");
                                     if (BCrypt.Net.BCrypt.Verify(txt_pwd.Text, hashedPwd))
                                     {
-                                        Form menu = new Menu(txt_usuario.Text);
+                                        Form menu = new Menu(txt_usuario.Text, reader.GetInt64("id"));
                                         menu.Show(); this.Hide();
                                     }
                                     else
