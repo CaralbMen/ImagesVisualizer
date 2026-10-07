@@ -105,6 +105,22 @@ namespace application
         {
             processImage("capa_roja", "red");
         }
+
+        private void btn_destacarVr_Click(object sender, EventArgs e)
+        {
+            processImage("capa_verde", "green");
+        }
+
+        private void btn_gris_Click(object sender, EventArgs e)
+        {
+            processImage("grises", "gray");
+        }
+
+        private void btn_hsv_Click(object sender, EventArgs e)
+        {
+            processImage("hsv", "hsv");
+        }
+
         private void processImage(string file, string extension)
         {
             // Ejecutar script Python

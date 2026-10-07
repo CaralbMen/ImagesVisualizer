@@ -111,6 +111,7 @@
             this.btn_gris.TabIndex = 6;
             this.btn_gris.Text = "Gris";
             this.btn_gris.UseVisualStyleBackColor = false;
+            this.btn_gris.Click += new System.EventHandler(this.btn_gris_Click);
             // 
             // btn_hsv
             // 
@@ -124,6 +125,7 @@
             this.btn_hsv.TabIndex = 7;
             this.btn_hsv.Text = "HSV";
             this.btn_hsv.UseVisualStyleBackColor = false;
+            this.btn_hsv.Click += new System.EventHandler(this.btn_hsv_Click);
             // 
             // btn_destacarRj
             // 
@@ -151,6 +153,7 @@
             this.btn_destacarVr.TabIndex = 9;
             this.btn_destacarVr.Text = "Destacar color verde";
             this.btn_destacarVr.UseVisualStyleBackColor = false;
+            this.btn_destacarVr.Click += new System.EventHandler(this.btn_destacarVr_Click);
             // 
             // btn_destacarAz
             // 

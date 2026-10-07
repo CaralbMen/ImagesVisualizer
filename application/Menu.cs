@@ -62,7 +62,9 @@ namespace application
                     string targetFolder = Path.Combine(repoRoot, "resources", "images");
 
                     //Definir la ruta completa del archivo de destino
-                    string fileName = Path.GetFileName(fileDialog.FileName);
+                    //string fileName = Path.GetFileName(fileDialog.FileName);
+                    string extension = Path.GetExtension(fileDialog.FileName);
+                    string fileName = $"{DateTime.Now.ToString("yyyyMMddHHmmss")}{extension}";
                     string destPath = Path.Combine(targetFolder, fileName);
 
                     // Copiar el archivo seleccionado a la nueva carpeta
