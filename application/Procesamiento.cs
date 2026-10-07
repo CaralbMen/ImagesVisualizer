@@ -38,7 +38,7 @@ namespace application
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            // charly 
         }
 
         private void btn_separar_Click(object sender, EventArgs e)
