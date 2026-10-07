@@ -28,6 +28,7 @@ namespace application
         private void Menu_Load(object sender, EventArgs e)
         {
             lbl_welcome.Text = "Bienvenido, " + this.usuario;
+            pcb_Img.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void lbl_welcome_Click(object sender, EventArgs e)
