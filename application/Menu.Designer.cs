@@ -29,53 +29,39 @@
         private void InitializeComponent()
         {
             this.lbl_welcome = new System.Windows.Forms.Label();
-            this.pcb_fondo = new System.Windows.Forms.PictureBox();
-            this.pcb_Img = new System.Windows.Forms.PictureBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
             this.btn_encender = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_fondo)).BeginInit();
+            this.pcb_Img = new System.Windows.Forms.PictureBox();
+            this.pcb_fondo = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tittle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_fondo)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_welcome
             // 
             this.lbl_welcome.AutoSize = true;
-            this.lbl_welcome.Location = new System.Drawing.Point(36, 28);
+            this.lbl_welcome.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_welcome.Location = new System.Drawing.Point(486, 83);
             this.lbl_welcome.Name = "lbl_welcome";
-            this.lbl_welcome.Size = new System.Drawing.Size(44, 16);
+            this.lbl_welcome.Size = new System.Drawing.Size(73, 25);
             this.lbl_welcome.TabIndex = 0;
             this.lbl_welcome.Text = "Holaa";
             this.lbl_welcome.Click += new System.EventHandler(this.lbl_welcome_Click);
             // 
-            // pcb_fondo
-            // 
-            this.pcb_fondo.Location = new System.Drawing.Point(1, 0);
-            this.pcb_fondo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pcb_fondo.Name = "pcb_fondo";
-            this.pcb_fondo.Size = new System.Drawing.Size(943, 714);
-            this.pcb_fondo.TabIndex = 1;
-            this.pcb_fondo.TabStop = false;
-            // 
-            // pcb_Img
-            // 
-            this.pcb_Img.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pcb_Img.Location = new System.Drawing.Point(184, 89);
-            this.pcb_Img.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pcb_Img.Name = "pcb_Img";
-            this.pcb_Img.Size = new System.Drawing.Size(553, 429);
-            this.pcb_Img.TabIndex = 2;
-            this.pcb_Img.TabStop = false;
-            // 
             // btn_buscar
             // 
             this.btn_buscar.BackColor = System.Drawing.Color.Navy;
+            this.btn_buscar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_buscar.Location = new System.Drawing.Point(89, 588);
+            this.btn_buscar.Location = new System.Drawing.Point(416, 516);
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(150, 32);
+            this.btn_buscar.Size = new System.Drawing.Size(169, 40);
             this.btn_buscar.TabIndex = 3;
             this.btn_buscar.Text = "Buscar Foto";
             this.btn_buscar.UseVisualStyleBackColor = false;
@@ -84,11 +70,12 @@
             // btn_limpiar
             // 
             this.btn_limpiar.BackColor = System.Drawing.Color.Navy;
+            this.btn_limpiar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_limpiar.ForeColor = System.Drawing.Color.White;
-            this.btn_limpiar.Location = new System.Drawing.Point(458, 588);
+            this.btn_limpiar.Location = new System.Drawing.Point(416, 638);
             this.btn_limpiar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(150, 32);
+            this.btn_limpiar.Size = new System.Drawing.Size(169, 40);
             this.btn_limpiar.TabIndex = 4;
             this.btn_limpiar.Text = "Limpiar";
             this.btn_limpiar.UseVisualStyleBackColor = false;
@@ -97,11 +84,12 @@
             // btn_encender
             // 
             this.btn_encender.BackColor = System.Drawing.Color.Navy;
+            this.btn_encender.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_encender.ForeColor = System.Drawing.Color.White;
-            this.btn_encender.Location = new System.Drawing.Point(271, 588);
+            this.btn_encender.Location = new System.Drawing.Point(416, 572);
             this.btn_encender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_encender.Name = "btn_encender";
-            this.btn_encender.Size = new System.Drawing.Size(150, 32);
+            this.btn_encender.Size = new System.Drawing.Size(169, 40);
             this.btn_encender.TabIndex = 5;
             this.btn_encender.Text = "Encender Camara";
             this.btn_encender.UseVisualStyleBackColor = false;
@@ -110,21 +98,68 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(661, 588);
+            this.button1.Location = new System.Drawing.Point(416, 700);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 32);
+            this.button1.Size = new System.Drawing.Size(169, 40);
             this.button1.TabIndex = 6;
             this.button1.Text = "Tomar Foto";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
+            // pcb_Img
+            // 
+            this.pcb_Img.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pcb_Img.Location = new System.Drawing.Point(273, 118);
+            this.pcb_Img.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcb_Img.Name = "pcb_Img";
+            this.pcb_Img.Size = new System.Drawing.Size(477, 367);
+            this.pcb_Img.TabIndex = 2;
+            this.pcb_Img.TabStop = false;
+            // 
+            // pcb_fondo
+            // 
+            this.pcb_fondo.BackgroundImage = global::application.Properties.Resources.background;
+            this.pcb_fondo.Location = new System.Drawing.Point(1, 0);
+            this.pcb_fondo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcb_fondo.Name = "pcb_fondo";
+            this.pcb_fondo.Size = new System.Drawing.Size(1061, 892);
+            this.pcb_fondo.TabIndex = 1;
+            this.pcb_fondo.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(416, 766);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(169, 40);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Guardar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // tittle
+            // 
+            this.tittle.AutoSize = true;
+            this.tittle.BackColor = System.Drawing.Color.Transparent;
+            this.tittle.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tittle.Location = new System.Drawing.Point(254, 9);
+            this.tittle.Name = "tittle";
+            this.tittle.Size = new System.Drawing.Size(549, 58);
+            this.tittle.TabIndex = 8;
+            this.tittle.Text = "Sistema de Visión Artificial";
+            // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 718);
+            this.ClientSize = new System.Drawing.Size(1062, 898);
+            this.Controls.Add(this.tittle);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_encender);
             this.Controls.Add(this.btn_limpiar);
@@ -132,12 +167,13 @@
             this.Controls.Add(this.pcb_Img);
             this.Controls.Add(this.lbl_welcome);
             this.Controls.Add(this.pcb_fondo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pcb_fondo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_fondo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +188,7 @@
         private System.Windows.Forms.Button btn_limpiar;
         private System.Windows.Forms.Button btn_encender;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label tittle;
     }
 }

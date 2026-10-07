@@ -42,6 +42,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackgroundImage = global::application.Properties.Resources.loginbak;
             this.groupBox1.Controls.Add(this.link_register);
             this.groupBox1.Controls.Add(this.btn_entrar);
             this.groupBox1.Controls.Add(this.txt_pwd);
@@ -50,18 +51,21 @@
             this.groupBox1.Controls.Add(this.lbl_usuario);
             this.groupBox1.Controls.Add(this.title);
             this.groupBox1.Location = new System.Drawing.Point(2, -2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 702);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(558, 910);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // link_register
             // 
             this.link_register.AutoSize = true;
+            this.link_register.BackColor = System.Drawing.Color.Transparent;
             this.link_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_register.Location = new System.Drawing.Point(173, 562);
+            this.link_register.Location = new System.Drawing.Point(195, 725);
             this.link_register.Name = "link_register";
-            this.link_register.Size = new System.Drawing.Size(101, 20);
+            this.link_register.Size = new System.Drawing.Size(116, 25);
             this.link_register.TabIndex = 3;
             this.link_register.TabStop = true;
             this.link_register.Text = "Registrarme";
@@ -69,13 +73,16 @@
             // 
             // btn_entrar
             // 
-            this.btn_entrar.BackColor = System.Drawing.Color.Gray;
+            this.btn_entrar.BackColor = System.Drawing.Color.Navy;
+            this.btn_entrar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_entrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_entrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar.Location = new System.Drawing.Point(158, 500);
+            this.btn_entrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar.ForeColor = System.Drawing.Color.White;
+            this.btn_entrar.Location = new System.Drawing.Point(179, 600);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 10);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(137, 49);
+            this.btn_entrar.Size = new System.Drawing.Size(154, 61);
             this.btn_entrar.TabIndex = 2;
             this.btn_entrar.Text = "Entrar";
             this.btn_entrar.UseVisualStyleBackColor = false;
@@ -83,58 +90,67 @@
             // 
             // txt_pwd
             // 
+            this.txt_pwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd.Location = new System.Drawing.Point(101, 369);
+            this.txt_pwd.Location = new System.Drawing.Point(115, 461);
+            this.txt_pwd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_pwd.Name = "txt_pwd";
-            this.txt_pwd.Size = new System.Drawing.Size(286, 30);
+            this.txt_pwd.Size = new System.Drawing.Size(321, 35);
             this.txt_pwd.TabIndex = 1;
             this.txt_pwd.UseSystemPasswordChar = true;
             // 
             // txt_usuario
             // 
+            this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(101, 254);
+            this.txt_usuario.Location = new System.Drawing.Point(114, 318);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(286, 30);
+            this.txt_usuario.Size = new System.Drawing.Size(321, 35);
             this.txt_usuario.TabIndex = 0;
             // 
             // lbl_pwd
             // 
             this.lbl_pwd.AutoSize = true;
-            this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd.Location = new System.Drawing.Point(98, 329);
+            this.lbl_pwd.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_pwd.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pwd.Location = new System.Drawing.Point(110, 411);
             this.lbl_pwd.Name = "lbl_pwd";
-            this.lbl_pwd.Size = new System.Drawing.Size(120, 25);
+            this.lbl_pwd.Size = new System.Drawing.Size(123, 25);
             this.lbl_pwd.TabIndex = 2;
             this.lbl_pwd.Text = "Contraseña:";
             // 
             // lbl_usuario
             // 
             this.lbl_usuario.AutoSize = true;
-            this.lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_usuario.Location = new System.Drawing.Point(98, 217);
+            this.lbl_usuario.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_usuario.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_usuario.Location = new System.Drawing.Point(110, 273);
             this.lbl_usuario.Name = "lbl_usuario";
-            this.lbl_usuario.Size = new System.Drawing.Size(90, 25);
+            this.lbl_usuario.Size = new System.Drawing.Size(101, 25);
             this.lbl_usuario.TabIndex = 1;
             this.lbl_usuario.Text = "Usuario: ";
+            this.lbl_usuario.Click += new System.EventHandler(this.lbl_usuario_Click);
             // 
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(180, 91);
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Location = new System.Drawing.Point(190, 133);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(111, 58);
+            this.title.Size = new System.Drawing.Size(134, 58);
             this.title.TabIndex = 0;
             this.title.Text = "Login";
             this.title.Click += new System.EventHandler(this.label1_Click);
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 698);
+            this.ClientSize = new System.Drawing.Size(546, 884);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

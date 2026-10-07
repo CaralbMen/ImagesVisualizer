@@ -52,19 +52,22 @@
             // 
             // pcb_fondo
             // 
+            this.pcb_fondo.BackgroundImage = global::application.Properties.Resources.loginbak;
             this.pcb_fondo.Location = new System.Drawing.Point(1, 1);
+            this.pcb_fondo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pcb_fondo.Name = "pcb_fondo";
-            this.pcb_fondo.Size = new System.Drawing.Size(851, 735);
+            this.pcb_fondo.Size = new System.Drawing.Size(899, 1020);
             this.pcb_fondo.TabIndex = 0;
             this.pcb_fondo.TabStop = false;
             // 
             // link_register
             // 
             this.link_register.AutoSize = true;
+            this.link_register.BackColor = System.Drawing.Color.Transparent;
             this.link_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_register.Location = new System.Drawing.Point(400, 627);
+            this.link_register.Location = new System.Drawing.Point(398, 906);
             this.link_register.Name = "link_register";
-            this.link_register.Size = new System.Drawing.Size(50, 20);
+            this.link_register.Size = new System.Drawing.Size(60, 25);
             this.link_register.TabIndex = 8;
             this.link_register.TabStop = true;
             this.link_register.Text = "Login";
@@ -74,9 +77,9 @@
             // 
             this.link_forgot_pwd.AutoSize = true;
             this.link_forgot_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.link_forgot_pwd.Location = new System.Drawing.Point(100, 409);
+            this.link_forgot_pwd.Location = new System.Drawing.Point(112, 511);
             this.link_forgot_pwd.Name = "link_forgot_pwd";
-            this.link_forgot_pwd.Size = new System.Drawing.Size(0, 20);
+            this.link_forgot_pwd.Size = new System.Drawing.Size(0, 25);
             this.link_forgot_pwd.TabIndex = 14;
             this.link_forgot_pwd.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_forgot_pwd_LinkClicked);
             // 
@@ -85,10 +88,11 @@
             this.btn_entrar.BackColor = System.Drawing.Color.Gray;
             this.btn_entrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_entrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar.Location = new System.Drawing.Point(359, 561);
+            this.btn_entrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar.Location = new System.Drawing.Point(356, 835);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 10);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(137, 49);
+            this.btn_entrar.Size = new System.Drawing.Size(154, 61);
             this.btn_entrar.TabIndex = 7;
             this.btn_entrar.Text = "Guardar";
             this.btn_entrar.UseVisualStyleBackColor = false;
@@ -96,30 +100,35 @@
             // 
             // txt_pwd
             // 
+            this.txt_pwd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd.Location = new System.Drawing.Point(103, 451);
+            this.txt_pwd.Location = new System.Drawing.Point(266, 671);
+            this.txt_pwd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_pwd.Name = "txt_pwd";
-            this.txt_pwd.Size = new System.Drawing.Size(286, 30);
+            this.txt_pwd.Size = new System.Drawing.Size(375, 35);
             this.txt_pwd.TabIndex = 5;
             this.txt_pwd.UseSystemPasswordChar = true;
             this.txt_pwd.TextChanged += new System.EventHandler(this.txt_pwd_TextChanged);
             // 
             // txt_usuario
             // 
+            this.txt_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_usuario.Location = new System.Drawing.Point(105, 338);
+            this.txt_usuario.Location = new System.Drawing.Point(266, 475);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(286, 30);
+            this.txt_usuario.Size = new System.Drawing.Size(375, 35);
             this.txt_usuario.TabIndex = 3;
             this.txt_usuario.TextChanged += new System.EventHandler(this.txt_usuario_TextChanged);
             // 
             // lbl_pwd
             // 
             this.lbl_pwd.AutoSize = true;
-            this.lbl_pwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd.Location = new System.Drawing.Point(100, 411);
+            this.lbl_pwd.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_pwd.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pwd.Location = new System.Drawing.Point(266, 632);
             this.lbl_pwd.Name = "lbl_pwd";
-            this.lbl_pwd.Size = new System.Drawing.Size(120, 25);
+            this.lbl_pwd.Size = new System.Drawing.Size(123, 25);
             this.lbl_pwd.TabIndex = 10;
             this.lbl_pwd.Text = "Contraseña:";
             this.lbl_pwd.Click += new System.EventHandler(this.lbl_pwd_Click);
@@ -127,10 +136,11 @@
             // lbl_usuario
             // 
             this.lbl_usuario.AutoSize = true;
-            this.lbl_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_usuario.Location = new System.Drawing.Point(102, 301);
+            this.lbl_usuario.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_usuario.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_usuario.Location = new System.Drawing.Point(266, 446);
             this.lbl_usuario.Name = "lbl_usuario";
-            this.lbl_usuario.Size = new System.Drawing.Size(90, 25);
+            this.lbl_usuario.Size = new System.Drawing.Size(101, 25);
             this.lbl_usuario.TabIndex = 9;
             this.lbl_usuario.Text = "Usuario: ";
             this.lbl_usuario.Click += new System.EventHandler(this.lbl_usuario_Click);
@@ -138,40 +148,45 @@
             // lbl_title
             // 
             this.lbl_title.AutoSize = true;
-            this.lbl_title.Font = new System.Drawing.Font("Myanmar Text", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.Location = new System.Drawing.Point(358, 49);
+            this.lbl_title.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(346, 62);
             this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(155, 58);
+            this.lbl_title.Size = new System.Drawing.Size(187, 58);
             this.lbl_title.TabIndex = 8;
             this.lbl_title.Text = "Registro";
             this.lbl_title.Click += new System.EventHandler(this.title_Click);
             // 
             // txt_correo
             // 
+            this.txt_correo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_correo.Location = new System.Drawing.Point(417, 338);
+            this.txt_correo.Location = new System.Drawing.Point(266, 574);
+            this.txt_correo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_correo.Name = "txt_correo";
-            this.txt_correo.Size = new System.Drawing.Size(329, 30);
+            this.txt_correo.Size = new System.Drawing.Size(375, 35);
             this.txt_correo.TabIndex = 4;
             this.txt_correo.TextChanged += new System.EventHandler(this.txt_correo_TextChanged);
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_email.Location = new System.Drawing.Point(412, 291);
+            this.lbl_email.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_email.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_email.Location = new System.Drawing.Point(266, 529);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(84, 25);
+            this.lbl_email.Size = new System.Drawing.Size(89, 25);
             this.lbl_email.TabIndex = 16;
             this.lbl_email.Text = "Correro:";
             this.lbl_email.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_pwd2
             // 
+            this.txt_pwd2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_pwd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pwd2.Location = new System.Drawing.Point(460, 451);
+            this.txt_pwd2.Location = new System.Drawing.Point(266, 761);
+            this.txt_pwd2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_pwd2.Name = "txt_pwd2";
-            this.txt_pwd2.Size = new System.Drawing.Size(286, 30);
+            this.txt_pwd2.Size = new System.Drawing.Size(375, 35);
             this.txt_pwd2.TabIndex = 6;
             this.txt_pwd2.UseSystemPasswordChar = true;
             this.txt_pwd2.TextChanged += new System.EventHandler(this.txt_pwd2_TextChanged);
@@ -179,74 +194,84 @@
             // lbl_pwd2
             // 
             this.lbl_pwd2.AutoSize = true;
-            this.lbl_pwd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pwd2.Location = new System.Drawing.Point(457, 411);
+            this.lbl_pwd2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_pwd2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pwd2.Location = new System.Drawing.Point(261, 732);
             this.lbl_pwd2.Name = "lbl_pwd2";
-            this.lbl_pwd2.Size = new System.Drawing.Size(205, 25);
+            this.lbl_pwd2.Size = new System.Drawing.Size(227, 25);
             this.lbl_pwd2.TabIndex = 18;
             this.lbl_pwd2.Text = "Confirmar contraseña:";
             this.lbl_pwd2.Click += new System.EventHandler(this.lbl_pwd2_Click);
             // 
             // txt_nombre
             // 
+            this.txt_nombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(105, 229);
+            this.txt_nombre.Location = new System.Drawing.Point(266, 189);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(217, 30);
+            this.txt_nombre.Size = new System.Drawing.Size(375, 35);
             this.txt_nombre.TabIndex = 0;
             // 
             // lbl_nombre
             // 
             this.lbl_nombre.AutoSize = true;
-            this.lbl_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre.Location = new System.Drawing.Point(102, 192);
+            this.lbl_nombre.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nombre.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(265, 160);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(116, 25);
+            this.lbl_nombre.Size = new System.Drawing.Size(124, 25);
             this.lbl_nombre.TabIndex = 20;
             this.lbl_nombre.Text = "Nombre(s): ";
             // 
             // txt_apaterno
             // 
+            this.txt_apaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_apaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_apaterno.Location = new System.Drawing.Point(334, 229);
+            this.txt_apaterno.Location = new System.Drawing.Point(266, 278);
+            this.txt_apaterno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_apaterno.Name = "txt_apaterno";
-            this.txt_apaterno.Size = new System.Drawing.Size(200, 30);
+            this.txt_apaterno.Size = new System.Drawing.Size(375, 35);
             this.txt_apaterno.TabIndex = 1;
             this.txt_apaterno.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lbl_apaterno
             // 
             this.lbl_apaterno.AutoSize = true;
-            this.lbl_apaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_apaterno.Location = new System.Drawing.Point(329, 192);
+            this.lbl_apaterno.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_apaterno.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_apaterno.Location = new System.Drawing.Point(265, 249);
             this.lbl_apaterno.Name = "lbl_apaterno";
-            this.lbl_apaterno.Size = new System.Drawing.Size(104, 25);
+            this.lbl_apaterno.Size = new System.Drawing.Size(118, 25);
             this.lbl_apaterno.TabIndex = 22;
             this.lbl_apaterno.Text = "A. Paterno";
             // 
             // txt_amaterno
             // 
+            this.txt_amaterno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txt_amaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_amaterno.Location = new System.Drawing.Point(546, 229);
+            this.txt_amaterno.Location = new System.Drawing.Point(266, 388);
+            this.txt_amaterno.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_amaterno.Name = "txt_amaterno";
-            this.txt_amaterno.Size = new System.Drawing.Size(200, 30);
+            this.txt_amaterno.Size = new System.Drawing.Size(375, 35);
             this.txt_amaterno.TabIndex = 2;
             // 
             // lbl_amaterno
             // 
             this.lbl_amaterno.AutoSize = true;
-            this.lbl_amaterno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_amaterno.Location = new System.Drawing.Point(541, 192);
+            this.lbl_amaterno.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_amaterno.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_amaterno.Location = new System.Drawing.Point(266, 346);
             this.lbl_amaterno.Name = "lbl_amaterno";
-            this.lbl_amaterno.Size = new System.Drawing.Size(108, 25);
+            this.lbl_amaterno.Size = new System.Drawing.Size(123, 25);
             this.lbl_amaterno.TabIndex = 24;
             this.lbl_amaterno.Text = "A. Materno";
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 736);
+            this.ClientSize = new System.Drawing.Size(864, 1013);
             this.Controls.Add(this.txt_amaterno);
             this.Controls.Add(this.lbl_amaterno);
             this.Controls.Add(this.txt_apaterno);
@@ -266,6 +291,7 @@
             this.Controls.Add(this.lbl_usuario);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.pcb_fondo);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";

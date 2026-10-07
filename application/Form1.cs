@@ -74,5 +74,10 @@ namespace application
                 }
             }
         }
+
+        private void lbl_usuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
