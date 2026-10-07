@@ -137,6 +137,7 @@
             this.btn_destacarRj.TabIndex = 8;
             this.btn_destacarRj.Text = "Destacar color rojo";
             this.btn_destacarRj.UseVisualStyleBackColor = false;
+            this.btn_destacarRj.Click += new System.EventHandler(this.btn_destacarRj_Click);
             // 
             // btn_destacarVr
             // 
@@ -163,6 +164,7 @@
             this.btn_destacarAz.TabIndex = 10;
             this.btn_destacarAz.Text = "Destacar color azul";
             this.btn_destacarAz.UseVisualStyleBackColor = false;
+            this.btn_destacarAz.Click += new System.EventHandler(this.btn_destacarAz_Click);
             // 
             // btn_negativa
             // 

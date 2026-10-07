@@ -14,12 +14,13 @@ namespace application
 {
     public partial class Procesamiento : Form
     {
-        public string nombre, pathImage;
+        public string nombre, pathImage, repoRoot;
         public Procesamiento(string nombre, string pathImage)
         {
             InitializeComponent();
             this.nombre = nombre;
             this.pathImage = pathImage;
+            this.repoRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\"));
             pcb_Img.Image = Image.FromFile(pathImage);
         }
 
@@ -43,10 +44,10 @@ namespace application
         private void btn_separar_Click(object sender, EventArgs e)
         {
             // Ruta raíz del repo (sube dos niveles desde bin/Debug)
-            string repoRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\"));
+            //string repoRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\"));
      
             // Ejecutar script Python
-            RunPythonScript(Path.Combine(repoRoot,@"..\python_scripts", "separar_capas.py"), this.pathImage);
+            RunPythonScript(Path.Combine(this.repoRoot,"python_scripts", "separar_capas.py"), this.pathImage);
 
             // Rutas de salida generadas por el script
             string ext = Path.GetExtension(this.pathImage);
@@ -95,16 +96,38 @@ namespace application
 
         }
 
+        private void btn_destacarAz_Click(object sender, EventArgs e)
+        {
+            processImage("capa_azul", "blue");
+        }
+
+        private void btn_destacarRj_Click(object sender, EventArgs e)
+        {
+            processImage("capa_roja", "red");
+        }
+        private void processImage(string file, string extension)
+        {
+            // Ejecutar script Python
+            RunPythonScript(Path.Combine(this.repoRoot, "python_scripts", file+ ".py"), this.pathImage);
+            // Rutas de salida generadas por el script se saca la extencion del archivo y se le agrega el _red, blue o green dependiendo del procesamiento
+            string ext = Path.GetExtension(this.pathImage);
+            string basePath = this.pathImage.Substring(0, this.pathImage.Length - ext.Length);
+
+            string imgPath = basePath + "_"+ extension + ext;
+
+            pcb_Img.Image = Image.FromFile(imgPath);
+        }
+
         private void RunPythonScript(string scriptName, string args)
         { 
             ProcessStartInfo psi = new ProcessStartInfo
             {
                 FileName = "python",
-                // Envolver argumentos entre comillas por si la ruta contiene espacios
+                //  argumentos entre comillas por si la ruta contiene espacios
                 Arguments = $"\"{scriptName}\" \"{args}\"",
                 UseShellExecute = false,
                 RedirectStandardOutput = true,
-                RedirectStandardError = true, // Capturar errores de ejecución
+                RedirectStandardError = true,
                 CreateNoWindow = true
             };
 

@@ -20,9 +20,9 @@ if img is None:
     sys.exit(1)
 
 # b, g, r = cv2.split(img)
-cb = img[:, :, 0]
+cr = img[:, :, 0]
 cg = img[:, :, 1]
-cr = img[:, :, 2]
+cb = img[:, :, 2]
 
 R = np.zeros_like(img)
 R[:, :, 0] = cr
