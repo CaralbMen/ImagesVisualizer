@@ -21,7 +21,7 @@ namespace application
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            lbl_welcome.Text = "Bienvenido, " + this.usuario;
+            //lbl_welcome.Text = "Bienvenido, " + this.usuario;
         }
     }
 }
