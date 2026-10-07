@@ -46,7 +46,7 @@
             this.lbl_welcome.Name = "lbl_welcome";
             this.lbl_welcome.Size = new System.Drawing.Size(44, 16);
             this.lbl_welcome.TabIndex = 0;
-            this.lbl_welcome.Text = "label1";
+            this.lbl_welcome.Text = "Holaa";
             this.lbl_welcome.Click += new System.EventHandler(this.lbl_welcome_Click);
             // 
             // pcb_fondo
@@ -60,6 +60,7 @@
             // 
             // pcb_Img
             // 
+            this.pcb_Img.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.pcb_Img.Location = new System.Drawing.Point(184, 89);
             this.pcb_Img.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcb_Img.Name = "pcb_Img";
@@ -132,6 +133,7 @@
             this.Controls.Add(this.lbl_welcome);
             this.Controls.Add(this.pcb_fondo);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_fondo)).EndInit();

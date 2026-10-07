@@ -31,72 +31,158 @@ namespace application
 
         private void btn_entrar_Click(object sender, EventArgs e)
         {
-            if(txt_usuario.Text != "")
+            if(txt_nombre.Text != "")
             {
-                if(txt_pwd.Text != "")
+                if(txt_apaterno.Text!="")
                 {
-                    if(txt_pwd2.Text!= "")
+                    if(txt_amaterno.Text != "")
                     {
-                        if (txt_pwd.Text == txt_pwd2.Text)
+                        if (txt_usuario.Text != "")
                         {
-                            if (txt_correo.Text != "")
+                            if (txt_pwd.Text != "")
                             {
-                                if(txt_correo.Text.Contains("@") && txt_correo.Text.Contains("."))
+                                if (txt_pwd2.Text != "")
                                 {
-                                    using (MySqlConnection connection = Connection.GetConnection())
+                                    if (txt_pwd.Text == txt_pwd2.Text)
                                     {
-                                        try
+                                        if (txt_correo.Text != "")
                                         {
-                                            connection.Open();
-                                            String hashedPwd = BCrypt.Net.BCrypt.HashPassword(txt_pwd.Text);
-                                            string query = "INSERT INTO usuarios (username, pwd, email) VALUES (@username, @password, @email)";
-                                            using (MySqlCommand command = new MySqlCommand(query, connection))
+                                            if (txt_correo.Text.Contains("@") && txt_correo.Text.Contains("."))
                                             {
-                                                command.Parameters.AddWithValue("@username", txt_usuario.Text);
-                                                command.Parameters.AddWithValue("@password", hashedPwd);
-                                                command.Parameters.AddWithValue("@email", txt_correo.Text);
-                                                command.ExecuteNonQuery();
+                                                using (MySqlConnection connection = Connection.GetConnection())
+                                                {
+                                                    try
+                                                    {
+                                                        connection.Open();
+                                                        String hashedPwd = BCrypt.Net.BCrypt.HashPassword(txt_pwd.Text);
+                                                        string query = "INSERT INTO usuarios (nombre, apaterno, amaterno, username, email, pwd) VALUES (@nombre, @apaterno, @amaterno, @username, @email, @password)";
+                                                        using (MySqlCommand command = new MySqlCommand(query, connection))
+                                                        {
+                                                            command.Parameters.AddWithValue("@nombre", txt_nombre.Text);
+                                                            command.Parameters.AddWithValue("@apaterno", txt_apaterno.Text);
+                                                            command.Parameters.AddWithValue("@amaterno", txt_amaterno.Text);
+                                                            command.Parameters.AddWithValue("@username", txt_usuario.Text);
+                                                            command.Parameters.AddWithValue("@email", txt_correo.Text);
+                                                            command.Parameters.AddWithValue("@password", hashedPwd);
+                                                            command.ExecuteNonQuery();
+                                                        }
+                                                        MessageBox.Show("Usuario registrado exitosamente");
+                                                        Form menu = new Menu(txt_usuario.Text);
+                                                        menu.Show();
+                                                        this.Close();
+                                                    }
+                                                    catch (Exception ex)
+                                                    {
+                                                        MessageBox.Show("Error al registrar el usuario: " + ex.Message);
+                                                    }
+                                                }
                                             }
-                                            MessageBox.Show("Usuario registrado exitosamente");
-                                            Form menu = new Menu(txt_usuario.Text);
-                                            menu.Show();
-                                            this.Close();
+                                            else
+                                            {
+                                                MessageBox.Show("Ingresa un correo electrónico válido");
+                                            }
+
                                         }
-                                        catch (Exception ex)
+                                        else
                                         {
-                                            MessageBox.Show("Error al registrar el usuario: " + ex.Message);
+                                            MessageBox.Show("Ingresa tu correo electrónico");
                                         }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Las contraseñas no coinciden");
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Ingresa un correo electrónico válido");
+                                    MessageBox.Show("Confirma tu contraseña");
                                 }
-                                
                             }
                             else
                             {
-                                MessageBox.Show("Ingresa tu correo electrónico");
+                                MessageBox.Show("Ingresa tu contraseña");
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Las contraseñas no coinciden");
+                            MessageBox.Show("Ingresa tu nombre de usuario");
                         }
-                    } else
-                    {
-                        MessageBox.Show("Confirma tu contraseña");
                     }
-
-                }else
-                {
-                    MessageBox.Show("Ingresa tu contraseña");
                 }
-
+                else
+                {
+                    MessageBox.Show("Ingresa tu apellido paterno");
+                }
             }else
             {
-                MessageBox.Show("Ingresa tu nombre de usuario");
+                MessageBox.Show("Ingresa tu nombre");
             }
+            //if(txt_usuario.Text != "")
+            //{
+            //    if(txt_pwd.Text != "")
+            //    {
+            //        if(txt_pwd2.Text!= "")
+            //        {
+            //            if (txt_pwd.Text == txt_pwd2.Text)
+            //            {
+            //                if (txt_correo.Text != "")
+            //                {
+            //                    if(txt_correo.Text.Contains("@") && txt_correo.Text.Contains("."))
+            //                    {
+            //                        using (MySqlConnection connection = Connection.GetConnection())
+            //                        {
+            //                            try
+            //                            {
+            //                                connection.Open();
+            //                                String hashedPwd = BCrypt.Net.BCrypt.HashPassword(txt_pwd.Text);
+            //                                string query = "INSERT INTO usuarios (username, pwd, email) VALUES (@username, @password, @email)";
+            //                                using (MySqlCommand command = new MySqlCommand(query, connection))
+            //                                {
+            //                                    command.Parameters.AddWithValue("@username", txt_usuario.Text);
+            //                                    command.Parameters.AddWithValue("@password", hashedPwd);
+            //                                    command.Parameters.AddWithValue("@email", txt_correo.Text);
+            //                                    command.ExecuteNonQuery();
+            //                                }
+            //                                MessageBox.Show("Usuario registrado exitosamente");
+            //                                Form menu = new Menu(txt_usuario.Text);
+            //                                menu.Show();
+            //                                this.Close();
+            //                            }
+            //                            catch (Exception ex)
+            //                            {
+            //                                MessageBox.Show("Error al registrar el usuario: " + ex.Message);
+            //                            }
+            //                        }
+            //                    }
+            //                    else
+            //                    {
+            //                        MessageBox.Show("Ingresa un correo electrónico válido");
+            //                    }
+                                
+            //                }
+            //                else
+            //                {
+            //                    MessageBox.Show("Ingresa tu correo electrónico");
+            //                }
+            //            }
+            //            else
+            //            {
+            //                MessageBox.Show("Las contraseñas no coinciden");
+            //            }
+            //        } else
+            //        {
+            //            MessageBox.Show("Confirma tu contraseña");
+            //        }
+
+            //    }else
+            //    {
+            //        MessageBox.Show("Ingresa tu contraseña");
+            //    }
+
+            //}else
+            //{
+            //    MessageBox.Show("Ingresa tu nombre de usuario");
+            //}
         }
 
         private void txt_pwd_TextChanged(object sender, EventArgs e)
@@ -127,6 +213,31 @@ namespace application
         }
 
         private void Register_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_correo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_pwd2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_pwd2_TextChanged(object sender, EventArgs e)
         {
 
         }
