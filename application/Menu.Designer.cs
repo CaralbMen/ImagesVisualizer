@@ -46,7 +46,7 @@
             this.lbl_welcome.AutoSize = true;
             this.lbl_welcome.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lbl_welcome.Location = new System.Drawing.Point(486, 83);
+            this.lbl_welcome.Location = new System.Drawing.Point(424, 90);
             this.lbl_welcome.Name = "lbl_welcome";
             this.lbl_welcome.Size = new System.Drawing.Size(73, 25);
             this.lbl_welcome.TabIndex = 0;
@@ -112,7 +112,7 @@
             // pcb_Img
             // 
             this.pcb_Img.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pcb_Img.Location = new System.Drawing.Point(273, 118);
+            this.pcb_Img.Location = new System.Drawing.Point(273, 127);
             this.pcb_Img.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcb_Img.Name = "pcb_Img";
             this.pcb_Img.Size = new System.Drawing.Size(477, 367);
@@ -147,7 +147,7 @@
             this.tittle.AutoSize = true;
             this.tittle.BackColor = System.Drawing.Color.Transparent;
             this.tittle.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tittle.Location = new System.Drawing.Point(254, 9);
+            this.tittle.Location = new System.Drawing.Point(253, 23);
             this.tittle.Name = "tittle";
             this.tittle.Size = new System.Drawing.Size(549, 58);
             this.tittle.TabIndex = 8;
