@@ -62,7 +62,7 @@
             this.link_register.Location = new System.Drawing.Point(173, 562);
             this.link_register.Name = "link_register";
             this.link_register.Size = new System.Drawing.Size(101, 20);
-            this.link_register.TabIndex = 7;
+            this.link_register.TabIndex = 3;
             this.link_register.TabStop = true;
             this.link_register.Text = "Registrarme";
             this.link_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
@@ -76,7 +76,7 @@
             this.btn_entrar.Location = new System.Drawing.Point(158, 500);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(137, 49);
-            this.btn_entrar.TabIndex = 5;
+            this.btn_entrar.TabIndex = 2;
             this.btn_entrar.Text = "Entrar";
             this.btn_entrar.UseVisualStyleBackColor = false;
             this.btn_entrar.Click += new System.EventHandler(this.btn_entrar_Click);
@@ -87,7 +87,7 @@
             this.txt_pwd.Location = new System.Drawing.Point(101, 369);
             this.txt_pwd.Name = "txt_pwd";
             this.txt_pwd.Size = new System.Drawing.Size(286, 30);
-            this.txt_pwd.TabIndex = 4;
+            this.txt_pwd.TabIndex = 1;
             this.txt_pwd.UseSystemPasswordChar = true;
             // 
             // txt_usuario
@@ -96,7 +96,7 @@
             this.txt_usuario.Location = new System.Drawing.Point(101, 254);
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.Size = new System.Drawing.Size(286, 30);
-            this.txt_usuario.TabIndex = 3;
+            this.txt_usuario.TabIndex = 0;
             // 
             // lbl_pwd
             // 

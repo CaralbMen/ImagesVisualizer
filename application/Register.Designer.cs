@@ -59,7 +59,7 @@
             this.link_register.Location = new System.Drawing.Point(211, 629);
             this.link_register.Name = "link_register";
             this.link_register.Size = new System.Drawing.Size(50, 20);
-            this.link_register.TabIndex = 15;
+            this.link_register.TabIndex = 5;
             this.link_register.TabStop = true;
             this.link_register.Text = "Login";
             this.link_register.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_register_LinkClicked);
@@ -83,8 +83,8 @@
             this.btn_entrar.Location = new System.Drawing.Point(166, 573);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(137, 49);
-            this.btn_entrar.TabIndex = 13;
-            this.btn_entrar.Text = "Registrarme";
+            this.btn_entrar.TabIndex = 4;
+            this.btn_entrar.Text = "Guardar";
             this.btn_entrar.UseVisualStyleBackColor = false;
             this.btn_entrar.Click += new System.EventHandler(this.btn_entrar_Click);
             // 
@@ -94,7 +94,7 @@
             this.txt_pwd.Location = new System.Drawing.Point(101, 284);
             this.txt_pwd.Name = "txt_pwd";
             this.txt_pwd.Size = new System.Drawing.Size(286, 30);
-            this.txt_pwd.TabIndex = 12;
+            this.txt_pwd.TabIndex = 1;
             this.txt_pwd.UseSystemPasswordChar = true;
             this.txt_pwd.TextChanged += new System.EventHandler(this.txt_pwd_TextChanged);
             // 
@@ -104,7 +104,7 @@
             this.txt_usuario.Location = new System.Drawing.Point(101, 182);
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.Size = new System.Drawing.Size(286, 30);
-            this.txt_usuario.TabIndex = 11;
+            this.txt_usuario.TabIndex = 0;
             this.txt_usuario.TextChanged += new System.EventHandler(this.txt_usuario_TextChanged);
             // 
             // lbl_pwd
@@ -146,7 +146,7 @@
             this.txt_correo.Location = new System.Drawing.Point(101, 471);
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(286, 30);
-            this.txt_correo.TabIndex = 17;
+            this.txt_correo.TabIndex = 3;
             // 
             // label1
             // 
@@ -164,7 +164,7 @@
             this.txt_pwd2.Location = new System.Drawing.Point(101, 377);
             this.txt_pwd2.Name = "txt_pwd2";
             this.txt_pwd2.Size = new System.Drawing.Size(286, 30);
-            this.txt_pwd2.TabIndex = 19;
+            this.txt_pwd2.TabIndex = 2;
             this.txt_pwd2.UseSystemPasswordChar = true;
             // 
             // label2

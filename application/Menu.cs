@@ -21,7 +21,7 @@ namespace application
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            //lbl_welcome.Text = "Bienvenido, " + this.usuario;
+            lbl_welcome.Text = "Bienvenido, " + this.usuario;
         }
 
         private void lbl_welcome_Click(object sender, EventArgs e)
@@ -31,7 +31,13 @@ namespace application
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter= "Imagenes |*.jpg;*.jpeg;*.png;";
+            if(fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pcb_Img.Image = new Bitmap(fileDialog.FileName);
+                pcb_Img.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
