@@ -105,5 +105,19 @@ namespace application
                 btn_encender.Text = "Encender Camara";
             }
         }
+
+        private void btn_procesar_Click(object sender, EventArgs e)
+        {
+            if(pcb_Img.Image != null)
+            {
+                Form procesamiento = new Procesamiento(this.usuario);
+                procesamiento.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Primero selecciona una imagen o enciende la cámara");
+            }
+        }
     }
 }
