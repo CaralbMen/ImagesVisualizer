@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tittle3 = new System.Windows.Forms.TextBox();
-            this.cruda = new System.Windows.Forms.TextBox();
-            this.Rojo = new System.Windows.Forms.TextBox();
-            this.verde = new System.Windows.Forms.TextBox();
-            this.azul = new System.Windows.Forms.TextBox();
-            this.magenta = new System.Windows.Forms.TextBox();
-            this.yellow = new System.Windows.Forms.TextBox();
-            this.cian = new System.Windows.Forms.TextBox();
             this.img_cian = new System.Windows.Forms.PictureBox();
             this.img_yellow = new System.Windows.Forms.PictureBox();
             this.img_Magenta = new System.Windows.Forms.PictureBox();
@@ -43,7 +35,15 @@
             this.img_Verde = new System.Windows.Forms.PictureBox();
             this.img_Roja = new System.Windows.Forms.PictureBox();
             this.img_Cruda = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Cruda = new System.Windows.Forms.Label();
+            this.Rojo = new System.Windows.Forms.Label();
+            this.Verde = new System.Windows.Forms.Label();
+            this.Azul = new System.Windows.Forms.Label();
+            this.Magenta = new System.Windows.Forms.Label();
+            this.yeloww = new System.Windows.Forms.Label();
+            this.Cian = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.img_cian)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_yellow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Magenta)).BeginInit();
@@ -51,89 +51,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_Verde)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Roja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Cruda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // tittle3
-            // 
-            this.tittle3.Location = new System.Drawing.Point(356, 39);
-            this.tittle3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tittle3.Name = "tittle3";
-            this.tittle3.Size = new System.Drawing.Size(182, 22);
-            this.tittle3.TabIndex = 1;
-            this.tittle3.Text = "Separar en Capas";
-            // 
-            // cruda
-            // 
-            this.cruda.Location = new System.Drawing.Point(72, 62);
-            this.cruda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cruda.Name = "cruda";
-            this.cruda.Size = new System.Drawing.Size(182, 22);
-            this.cruda.TabIndex = 9;
-            this.cruda.Text = "Imagen Original";
-            // 
-            // Rojo
-            // 
-            this.Rojo.Location = new System.Drawing.Point(357, 62);
-            this.Rojo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Rojo.Name = "Rojo";
-            this.Rojo.Size = new System.Drawing.Size(182, 22);
-            this.Rojo.TabIndex = 10;
-            this.Rojo.Text = "Canal Rojo";
-            // 
-            // verde
-            // 
-            this.verde.Location = new System.Drawing.Point(612, 62);
-            this.verde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.verde.Name = "verde";
-            this.verde.Size = new System.Drawing.Size(182, 22);
-            this.verde.TabIndex = 11;
-            this.verde.Text = "Canal Verde";
-            this.verde.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // azul
-            // 
-            this.azul.Location = new System.Drawing.Point(72, 285);
-            this.azul.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.azul.Name = "azul";
-            this.azul.Size = new System.Drawing.Size(182, 22);
-            this.azul.TabIndex = 12;
-            this.azul.Text = "Canal Azul";
-            // 
-            // magenta
-            // 
-            this.magenta.Location = new System.Drawing.Point(354, 285);
-            this.magenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.magenta.Name = "magenta";
-            this.magenta.Size = new System.Drawing.Size(182, 22);
-            this.magenta.TabIndex = 13;
-            this.magenta.Text = "Canal Magenta";
-            // 
-            // yellow
-            // 
-            this.yellow.Location = new System.Drawing.Point(612, 285);
-            this.yellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.yellow.Name = "yellow";
-            this.yellow.Size = new System.Drawing.Size(182, 22);
-            this.yellow.TabIndex = 14;
-            this.yellow.Text = "Canal Yellow";
-            // 
-            // cian
-            // 
-            this.cian.Location = new System.Drawing.Point(354, 506);
-            this.cian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cian.Name = "cian";
-            this.cian.Size = new System.Drawing.Size(182, 22);
-            this.cian.TabIndex = 15;
-            this.cian.Text = "Canal Cian";
             // 
             // img_cian
             // 
             this.img_cian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_cian.Location = new System.Drawing.Point(354, 532);
+            this.img_cian.Location = new System.Drawing.Point(398, 665);
             this.img_cian.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_cian.Name = "img_cian";
-            this.img_cian.Size = new System.Drawing.Size(183, 172);
+            this.img_cian.Size = new System.Drawing.Size(206, 215);
             this.img_cian.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_cian.TabIndex = 8;
             this.img_cian.TabStop = false;
@@ -141,10 +68,10 @@
             // img_yellow
             // 
             this.img_yellow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_yellow.Location = new System.Drawing.Point(610, 310);
+            this.img_yellow.Location = new System.Drawing.Point(686, 388);
             this.img_yellow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_yellow.Name = "img_yellow";
-            this.img_yellow.Size = new System.Drawing.Size(183, 172);
+            this.img_yellow.Size = new System.Drawing.Size(206, 215);
             this.img_yellow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_yellow.TabIndex = 7;
             this.img_yellow.TabStop = false;
@@ -152,10 +79,10 @@
             // img_Magenta
             // 
             this.img_Magenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_Magenta.Location = new System.Drawing.Point(356, 310);
+            this.img_Magenta.Location = new System.Drawing.Point(399, 385);
             this.img_Magenta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_Magenta.Name = "img_Magenta";
-            this.img_Magenta.Size = new System.Drawing.Size(183, 172);
+            this.img_Magenta.Size = new System.Drawing.Size(206, 215);
             this.img_Magenta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_Magenta.TabIndex = 6;
             this.img_Magenta.TabStop = false;
@@ -163,10 +90,10 @@
             // img_Azul
             // 
             this.img_Azul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_Azul.Location = new System.Drawing.Point(70, 310);
+            this.img_Azul.Location = new System.Drawing.Point(79, 388);
             this.img_Azul.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_Azul.Name = "img_Azul";
-            this.img_Azul.Size = new System.Drawing.Size(183, 172);
+            this.img_Azul.Size = new System.Drawing.Size(206, 215);
             this.img_Azul.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_Azul.TabIndex = 5;
             this.img_Azul.TabStop = false;
@@ -174,10 +101,10 @@
             // img_Verde
             // 
             this.img_Verde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_Verde.Location = new System.Drawing.Point(610, 87);
+            this.img_Verde.Location = new System.Drawing.Point(686, 109);
             this.img_Verde.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_Verde.Name = "img_Verde";
-            this.img_Verde.Size = new System.Drawing.Size(183, 172);
+            this.img_Verde.Size = new System.Drawing.Size(206, 215);
             this.img_Verde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_Verde.TabIndex = 4;
             this.img_Verde.TabStop = false;
@@ -185,10 +112,10 @@
             // img_Roja
             // 
             this.img_Roja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_Roja.Location = new System.Drawing.Point(354, 87);
+            this.img_Roja.Location = new System.Drawing.Point(398, 109);
             this.img_Roja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_Roja.Name = "img_Roja";
-            this.img_Roja.Size = new System.Drawing.Size(183, 172);
+            this.img_Roja.Size = new System.Drawing.Size(206, 215);
             this.img_Roja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_Roja.TabIndex = 3;
             this.img_Roja.TabStop = false;
@@ -196,45 +123,132 @@
             // img_Cruda
             // 
             this.img_Cruda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.img_Cruda.Location = new System.Drawing.Point(70, 87);
+            this.img_Cruda.Location = new System.Drawing.Point(79, 109);
             this.img_Cruda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img_Cruda.Name = "img_Cruda";
-            this.img_Cruda.Size = new System.Drawing.Size(183, 172);
+            this.img_Cruda.Size = new System.Drawing.Size(206, 215);
             this.img_Cruda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img_Cruda.TabIndex = 2;
             this.img_Cruda.TabStop = false;
             // 
-            // pictureBox1
+            // lbl_title
             // 
-            this.pictureBox1.BackgroundImage = global::application.Properties.Resources.loginbak;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(906, 719);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_title.Font = new System.Drawing.Font("Script MT Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(426, 21);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(148, 58);
+            this.lbl_title.TabIndex = 21;
+            this.lbl_title.Text = "Capas";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackgroundImage = global::application.Properties.Resources.background;
+            this.groupBox1.Controls.Add(this.Cian);
+            this.groupBox1.Controls.Add(this.yeloww);
+            this.groupBox1.Controls.Add(this.Magenta);
+            this.groupBox1.Controls.Add(this.Azul);
+            this.groupBox1.Controls.Add(this.Verde);
+            this.groupBox1.Controls.Add(this.Rojo);
+            this.groupBox1.Controls.Add(this.lbl_title);
+            this.groupBox1.Controls.Add(this.Cruda);
+            this.groupBox1.Controls.Add(this.img_Magenta);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1024, 895);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            // 
+            // Cruda
+            // 
+            this.Cruda.AutoSize = true;
+            this.Cruda.BackColor = System.Drawing.Color.Transparent;
+            this.Cruda.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cruda.Location = new System.Drawing.Point(113, 79);
+            this.Cruda.Name = "Cruda";
+            this.Cruda.Size = new System.Drawing.Size(149, 25);
+            this.Cruda.TabIndex = 3;
+            this.Cruda.Text = "Imagen Cruda";
+            // 
+            // Rojo
+            // 
+            this.Rojo.AutoSize = true;
+            this.Rojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Rojo.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rojo.Location = new System.Drawing.Point(431, 79);
+            this.Rojo.Name = "Rojo";
+            this.Rojo.Size = new System.Drawing.Size(122, 25);
+            this.Rojo.TabIndex = 22;
+            this.Rojo.Text = "Canal Rojo";
+            // 
+            // Verde
+            // 
+            this.Verde.AutoSize = true;
+            this.Verde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Verde.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Verde.Location = new System.Drawing.Point(715, 79);
+            this.Verde.Name = "Verde";
+            this.Verde.Size = new System.Drawing.Size(132, 25);
+            this.Verde.TabIndex = 23;
+            this.Verde.Text = "Canal Verde";
+            // 
+            // Azul
+            // 
+            this.Azul.AutoSize = true;
+            this.Azul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Azul.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Azul.Location = new System.Drawing.Point(113, 358);
+            this.Azul.Name = "Azul";
+            this.Azul.Size = new System.Drawing.Size(123, 25);
+            this.Azul.TabIndex = 24;
+            this.Azul.Text = "Canal Azul";
+            // 
+            // Magenta
+            // 
+            this.Magenta.AutoSize = true;
+            this.Magenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Magenta.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Magenta.Location = new System.Drawing.Point(410, 358);
+            this.Magenta.Name = "Magenta";
+            this.Magenta.Size = new System.Drawing.Size(158, 25);
+            this.Magenta.TabIndex = 25;
+            this.Magenta.Text = "Canal Magenta";
+            // 
+            // yeloww
+            // 
+            this.yeloww.AutoSize = true;
+            this.yeloww.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.yeloww.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yeloww.Location = new System.Drawing.Point(704, 358);
+            this.yeloww.Name = "yeloww";
+            this.yeloww.Size = new System.Drawing.Size(145, 25);
+            this.yeloww.TabIndex = 26;
+            this.yeloww.Text = "Canal Yellow";
+            // 
+            // Cian
+            // 
+            this.Cian.AutoSize = true;
+            this.Cian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Cian.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cian.Location = new System.Drawing.Point(423, 635);
+            this.Cian.Name = "Cian";
+            this.Cian.Size = new System.Drawing.Size(120, 25);
+            this.Cian.TabIndex = 27;
+            this.Cian.Text = "Canal Cian";
             // 
             // Capas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 714);
-            this.Controls.Add(this.cian);
-            this.Controls.Add(this.yellow);
-            this.Controls.Add(this.magenta);
-            this.Controls.Add(this.azul);
-            this.Controls.Add(this.verde);
-            this.Controls.Add(this.Rojo);
-            this.Controls.Add(this.cruda);
+            this.ClientSize = new System.Drawing.Size(1017, 892);
             this.Controls.Add(this.img_cian);
             this.Controls.Add(this.img_yellow);
-            this.Controls.Add(this.img_Magenta);
             this.Controls.Add(this.img_Azul);
             this.Controls.Add(this.img_Verde);
             this.Controls.Add(this.img_Roja);
             this.Controls.Add(this.img_Cruda);
-            this.Controls.Add(this.tittle3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Capas";
             this.Text = "Capas";
@@ -246,16 +260,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.img_Verde)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Roja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_Cruda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox tittle3;
         private System.Windows.Forms.PictureBox img_Cruda;
         private System.Windows.Forms.PictureBox img_Roja;
         private System.Windows.Forms.PictureBox img_Verde;
@@ -263,12 +274,14 @@
         private System.Windows.Forms.PictureBox img_Magenta;
         private System.Windows.Forms.PictureBox img_yellow;
         private System.Windows.Forms.PictureBox img_cian;
-        private System.Windows.Forms.TextBox cruda;
-        private System.Windows.Forms.TextBox Rojo;
-        private System.Windows.Forms.TextBox verde;
-        private System.Windows.Forms.TextBox azul;
-        private System.Windows.Forms.TextBox magenta;
-        private System.Windows.Forms.TextBox yellow;
-        private System.Windows.Forms.TextBox cian;
+        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label Rojo;
+        private System.Windows.Forms.Label Cruda;
+        private System.Windows.Forms.Label Cian;
+        private System.Windows.Forms.Label yeloww;
+        private System.Windows.Forms.Label Magenta;
+        private System.Windows.Forms.Label Azul;
+        private System.Windows.Forms.Label Verde;
     }
 }

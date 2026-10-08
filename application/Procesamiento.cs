@@ -198,6 +198,11 @@ namespace application
             menu.Show();
         }
 
+        private void lbl_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void processImage(string file, string extension, double level = 0)
         {
             // Ejecutar script Python

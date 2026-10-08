@@ -335,5 +335,23 @@
   <ItemGroup>
     <None Include="Resources\background.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %284%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

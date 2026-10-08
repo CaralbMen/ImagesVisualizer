@@ -77,7 +77,7 @@
             this.btn_entrar.Cursor = System.Windows.Forms.Cursors.Default;
             this.btn_entrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_entrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btn_entrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_entrar.ForeColor = System.Drawing.Color.White;
             this.btn_entrar.Location = new System.Drawing.Point(179, 600);
             this.btn_entrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 10);
