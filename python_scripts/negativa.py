@@ -31,12 +31,12 @@ grayImage = grayImage.astype(np.uint8)
 
 negativeImage = 255 - grayImage
 
-
 base, ext = os.path.splitext(img_path)
-cv2.imwrite(base + "_negativa" + ext, negativeImage)
 
-#print("Imagen negativa guardada correctamente. En" + base)
-print("Imagen Procesada Correctamente")
-
+if os.path.exists(base + "_negativa" + ext):
+    print("Imagen Procesada Correctamente")
+else:
+    cv2.imwrite(base + "_negativa" + ext, negativeImage)
+    print("Imagen Procesada Correctamente")
 
 

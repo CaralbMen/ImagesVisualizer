@@ -32,7 +32,9 @@ if img is None:
     sys.exit(1)
 
 base, ext = os.path.splitext(img_path)
-cv2.imwrite(base + "_green" + ext, maskV)
 
-#print("Capa verde guardada correctamente. En" + base)
-print("Imagen Procesada Correctamente")
+if os.path.exists(base + "_green" + ext):
+    print("Imagen Procesada Correctamente")
+else:
+    cv2.imwrite(base + "_green" + ext, maskV)
+    print("Imagen Procesada Correctamente")

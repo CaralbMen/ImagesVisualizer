@@ -52,13 +52,24 @@ yellow_img = np.zeros_like(imgBGR)
 yellow_img[:, :, [0,1]] = rv
 
 base, ext = os.path.splitext(img_path)
-cv2.imwrite(base + "_red" + ext, red_img)
-cv2.imwrite(base + "_green" + ext, green_img)
-cv2.imwrite(base + "_blue" + ext, blue_img)
 
-cv2.imwrite(base + "_cyan" + ext, cyan_img)
-cv2.imwrite(base + "_magenta" + ext, magenta_img)
-cv2.imwrite(base + "_yellow" + ext, yellow_img)
+if not os.path.exists(base + "_red" + ext):
+    cv2.imwrite(base + "_red" + ext, red_img)
+
+if not os.path.exists(base + "_green" + ext):
+    cv2.imwrite(base + "_green" + ext, green_img)
+
+if not os.path.exists(base + "_blue" + ext):
+    cv2.imwrite(base + "_blue" + ext, blue_img)
+
+if not os.path.exists(base + "_cyan" + ext):
+    cv2.imwrite(base + "_cyan" + ext, cyan_img)
+
+if not os.path.exists(base + "_magenta" + ext):
+    cv2.imwrite(base + "_magenta" + ext, magenta_img)
+
+if not os.path.exists(base + "_yellow" + ext):
+    cv2.imwrite(base + "_yellow" + ext, yellow_img)
 
 #print("Capas RGB guardadas correctamente. En" + base)
 print("Imagen Procesada Correctamente")

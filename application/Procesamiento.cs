@@ -20,6 +20,7 @@ namespace application
     {
         public string nombre, pathImage, repoRoot;
         public long id_usuario;
+
         public Procesamiento(string nombre, string pathImage, long id_usuario)
         {
             InitializeComponent();
@@ -55,9 +56,11 @@ namespace application
          
             RunPythonScript(Path.Combine(this.repoRoot,"python_scripts", "separar_capas.py"), this.pathImage);
             pcb_Img.Image = Image.FromFile(this.pathImage);
+
             // Rutas de salida generadas por el script
             string ext = Path.GetExtension(this.pathImage);
             string basePath = this.pathImage.Substring(0, this.pathImage.Length - ext.Length);
+
             Form capas = new Capas(basePath, ext);
             capas.Show();
         }
@@ -103,16 +106,11 @@ namespace application
         }
         private void show_gammaBar(bool show)
         {
-            //lbl_0.BringToFront();
-            //lbl_1.BringToFront();
-            //lbl_2.BringToFront();
             btn_gamma.Visible = !show;
             level1.Visible = show;
             lbl_0.Visible = show;
             lbl_1.Visible = show;
             lbl_2.Visible = show;
-            //lbl_0.Show();
-
         }
         private void btn_gamma_Click(object sender, EventArgs e)
         {
@@ -208,6 +206,7 @@ namespace application
             // Rutas de salida generadas por el script se saca la extencion del archivo y se le agrega el _red, blue o green dependiendo del procesamiento
             string ext = Path.GetExtension(this.pathImage);
             string basePath = this.pathImage.Substring(0, this.pathImage.Length - ext.Length);
+            // documents/image_gray.jpeg
 
             string imgPath = basePath + "_"+ extension + ext;
             pcb_Img.Image = Image.FromFile(imgPath);

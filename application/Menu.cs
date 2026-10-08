@@ -218,7 +218,7 @@ namespace application
                         } catch(Exception ex)
                         {
                             MessageBox.Show(jsonMatrix);
-                            MessageBox.Show("Error al conectar a la base de datos: " + ex.Message);
+                            MessageBox.Show("Error al guardar la imagen: " + ex.Message);
                         
                         }
                     }

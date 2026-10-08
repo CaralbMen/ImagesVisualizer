@@ -31,9 +31,9 @@ grayImage = grayImage.astype(np.uint8)
 
 
 base, ext = os.path.splitext(img_path)
-cv2.imwrite(base + "_gray" + ext, grayImage)
 
-#print("Imagen gris guardada correctamente. En" + base)
-print("Imagen Procesada Correctamente")
-
-
+if os.path.exists(base + "_gray" + ext):
+    print("Imagen Procesada Correctamente")
+else:
+    cv2.imwrite(base + "_gray" + ext, grayImage)
+    print("Imagen Procesada Correctamente")

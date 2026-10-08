@@ -26,10 +26,10 @@ imgHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 
 base, ext = os.path.splitext(img_path)
-cv2.imwrite(base + "_hsv" + ext, imgHSV)
 
-#print("Imagen HSV guardada correctamente. En" + base)
-print("Imagen Procesada Correctamente")
-
-
+if os.path.exists(base + "_hsv" + ext):
+    print("Imagen Procesada Correctamente")
+else:
+    cv2.imwrite(base + "_hsv" + ext, imgHSV)
+    print("Imagen Procesada Correctamente")
 
