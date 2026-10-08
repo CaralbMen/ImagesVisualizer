@@ -45,6 +45,7 @@
             this.lbl_0 = new System.Windows.Forms.Label();
             this.lbl_1 = new System.Windows.Forms.Label();
             this.lbl_2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Img)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.level1)).BeginInit();
@@ -222,7 +223,7 @@
             this.level1.Name = "level1";
             this.level1.Size = new System.Drawing.Size(104, 56);
             this.level1.TabIndex = 14;
-            this.level1.Value = 10;
+            this.level1.Value = 1;
             this.level1.Scroll += new System.EventHandler(this.level1_Scroll);
             // 
             // lbl_0
@@ -252,11 +253,26 @@
             this.lbl_2.Text = "2";
             this.lbl_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Navy;
+            this.button1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(639, 25);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 32);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Procesamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 628);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_2);
             this.Controls.Add(this.lbl_1);
             this.Controls.Add(this.lbl_0);
@@ -306,5 +322,6 @@
         private System.Windows.Forms.Label lbl_0;
         private System.Windows.Forms.Label lbl_1;
         private System.Windows.Forms.Label lbl_2;
+        private System.Windows.Forms.Button button1;
     }
 }

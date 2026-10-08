@@ -51,55 +51,17 @@ namespace application
         private void btn_separar_Click(object sender, EventArgs e)
         {
             show_gammaBar(false);
-            pcb_Img.Image = Image.FromFile(this.pathImage);
-            // Ruta raíz del repo (sube dos niveles desde bin/Debug)
-            //string repoRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\"));
-
-            // Ejecutar script Python
+            
+         
             RunPythonScript(Path.Combine(this.repoRoot,"python_scripts", "separar_capas.py"), this.pathImage);
-
+            pcb_Img.Image = Image.FromFile(this.pathImage);
             // Rutas de salida generadas por el script
             string ext = Path.GetExtension(this.pathImage);
             string basePath = this.pathImage.Substring(0, this.pathImage.Length - ext.Length);
-
-            string redPath = basePath + "_red" + ext;
-            string greenPath = basePath + "_green" + ext;
-            string bluePath = basePath + "_blue" + ext;
-
-            // Ocultar imagen original
-            pcb_Img.Hide();
-
-            PictureBox redBox = CreatePictureBox(redPath, new Point(37, 148));
-            this.Controls.Add(redBox);
-            redBox.BringToFront();
-
-            PictureBox greenBox = CreatePictureBox(greenPath, new Point(210, 148));
-            this.Controls.Add(greenBox);
-            greenBox.BringToFront();
-
-            PictureBox blueBox = CreatePictureBox(bluePath, new Point(390, 148));
-            this.Controls.Add(blueBox);
-            blueBox.BringToFront();
+            Form capas = new Capas(basePath, ext);
+            capas.Show();
         }
-        private PictureBox CreatePictureBox(string imagePath, Point location)
-        {
-            Image img = null;
-            if (File.Exists(imagePath))
-            {
-                using (var stream = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
-                {
-                    img = Image.FromStream(stream);
-                }
-            }
-
-            return new PictureBox
-            {
-                Size = new Size(150, 150),
-                Location = location,
-                SizeMode = PictureBoxSizeMode.StretchImage,
-                Image = img
-            };
-        }
+      
         private void pcb_back_Click(object sender, EventArgs e)
         {
 
@@ -230,6 +192,12 @@ namespace application
             {
                 pcb_Img.Image = Image.FromFile(this.pathImage);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form menu = new Menu(this.nombre, this.id_usuario);
+            menu.Show();
         }
 
         private void processImage(string file, string extension, double level = 0)
