@@ -19,8 +19,8 @@ if img is None:
     print(f"Error: OpenCV no pudo leer la imagen en:\n{img_path}")
     sys.exit(1)
 
-imgBGR = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
-
+#imgBGR = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+imgBGR = img  # La imagen ya está en formato BGR al leerla con cv2.imread
 r = imgBGR[:, :, 2]
 g = imgBGR[:, :, 1]
 b = imgBGR[:, :, 0]
@@ -53,23 +53,23 @@ yellow_img[:, :, [0,1]] = rv
 
 base, ext = os.path.splitext(img_path)
 
-if not os.path.exists(base + "_red" + ext):
-    cv2.imwrite(base + "_red" + ext, red_img)
+if not os.path.exists(base + "_sred" + ext):
+    cv2.imwrite(base + "_sred" + ext, red_img)
 
-if not os.path.exists(base + "_green" + ext):
-    cv2.imwrite(base + "_green" + ext, green_img)
+if not os.path.exists(base + "_sgreen" + ext):
+    cv2.imwrite(base + "_sgreen" + ext, green_img)
 
-if not os.path.exists(base + "_blue" + ext):
-    cv2.imwrite(base + "_blue" + ext, blue_img)
+if not os.path.exists(base + "_sblue" + ext):
+    cv2.imwrite(base + "_sblue" + ext, blue_img)
 
-if not os.path.exists(base + "_cyan" + ext):
-    cv2.imwrite(base + "_cyan" + ext, cyan_img)
+if not os.path.exists(base + "_scyan" + ext):
+    cv2.imwrite(base + "_scyan" + ext, cyan_img)
 
-if not os.path.exists(base + "_magenta" + ext):
-    cv2.imwrite(base + "_magenta" + ext, magenta_img)
+if not os.path.exists(base + "_smagenta" + ext):
+    cv2.imwrite(base + "_smagenta" + ext, magenta_img)
 
-if not os.path.exists(base + "_yellow" + ext):
-    cv2.imwrite(base + "_yellow" + ext, yellow_img)
+if not os.path.exists(base + "_syellow" + ext):
+    cv2.imwrite(base + "_syellow" + ext, yellow_img)
 
 #print("Capas RGB guardadas correctamente. En" + base)
 print("Imagen Procesada Correctamente")
