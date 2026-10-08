@@ -41,8 +41,13 @@
             this.btn_negativa = new System.Windows.Forms.Button();
             this.btn_gamma = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
+            this.level1 = new System.Windows.Forms.TrackBar();
+            this.lbl_0 = new System.Windows.Forms.Label();
+            this.lbl_1 = new System.Windows.Forms.Label();
+            this.lbl_2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_back)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.level1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +66,7 @@
             this.pcb_back.Location = new System.Drawing.Point(1, -6);
             this.pcb_back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pcb_back.Name = "pcb_back";
-            this.pcb_back.Size = new System.Drawing.Size(811, 597);
+            this.pcb_back.Size = new System.Drawing.Size(822, 632);
             this.pcb_back.TabIndex = 1;
             this.pcb_back.TabStop = false;
             this.pcb_back.Click += new System.EventHandler(this.pcb_back_Click);
@@ -195,6 +200,7 @@
             this.btn_gamma.TabIndex = 12;
             this.btn_gamma.Text = "Gamma";
             this.btn_gamma.UseVisualStyleBackColor = false;
+            this.btn_gamma.Click += new System.EventHandler(this.btn_gamma_Click);
             // 
             // btn_guardar
             // 
@@ -208,12 +214,57 @@
             this.btn_guardar.TabIndex = 13;
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = false;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
+            // 
+            // level1
+            // 
+            this.level1.Location = new System.Drawing.Point(345, 505);
+            this.level1.Name = "level1";
+            this.level1.Size = new System.Drawing.Size(104, 56);
+            this.level1.TabIndex = 14;
+            this.level1.Value = 3;
+            this.level1.Visible = false;
+            this.level1.Scroll += new System.EventHandler(this.level1_Scroll);
+            // 
+            // lbl_0
+            // 
+            this.lbl_0.Location = new System.Drawing.Point(347, 530);
+            this.lbl_0.Name = "lbl_0";
+            this.lbl_0.Size = new System.Drawing.Size(31, 38);
+            this.lbl_0.TabIndex = 15;
+            this.lbl_0.Text = "0";
+            this.lbl_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_0.Visible = false;
+            // 
+            // lbl_1
+            // 
+            this.lbl_1.Location = new System.Drawing.Point(384, 534);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Size = new System.Drawing.Size(25, 30);
+            this.lbl_1.TabIndex = 16;
+            this.lbl_1.Text = "1";
+            this.lbl_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_1.Visible = false;
+            // 
+            // lbl_2
+            // 
+            this.lbl_2.Location = new System.Drawing.Point(417, 530);
+            this.lbl_2.Name = "lbl_2";
+            this.lbl_2.Size = new System.Drawing.Size(31, 38);
+            this.lbl_2.TabIndex = 17;
+            this.lbl_2.Text = "2";
+            this.lbl_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_2.Visible = false;
             // 
             // Procesamiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 590);
+            this.ClientSize = new System.Drawing.Size(829, 628);
+            this.Controls.Add(this.lbl_2);
+            this.Controls.Add(this.lbl_1);
+            this.Controls.Add(this.lbl_0);
+            this.Controls.Add(this.level1);
             this.Controls.Add(this.btn_guardar);
             this.Controls.Add(this.btn_gamma);
             this.Controls.Add(this.btn_negativa);
@@ -234,6 +285,7 @@
             this.Load += new System.EventHandler(this.Procesamiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.level1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +306,9 @@
         private System.Windows.Forms.Button btn_negativa;
         private System.Windows.Forms.Button btn_gamma;
         private System.Windows.Forms.Button btn_guardar;
+        private System.Windows.Forms.TrackBar level1;
+        private System.Windows.Forms.Label lbl_0;
+        private System.Windows.Forms.Label lbl_1;
+        private System.Windows.Forms.Label lbl_2;
     }
 }

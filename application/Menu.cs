@@ -153,6 +153,10 @@ namespace application
                 closeCamera();
                 MessageBox.Show("Imagen guardada en: " + pathimage);
             }
+            else
+            {
+                MessageBox.Show("Enciende la cámara");
+            }
         }
 
         private void closeCamera() {
@@ -220,6 +224,10 @@ namespace application
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("No hay imagen para guardar");
+            }
         }
 
 
@@ -234,7 +242,7 @@ namespace application
                 else
                 {
                     //Form procesamiento = new Procesamiento(this.usuario, (Bitmap)pcb_Img.Image);
-                    Form procesamiento = new Procesamiento(this.usuario, pathimage);
+                    Form procesamiento = new Procesamiento(this.usuario, pathimage, this.userId);
                     procesamiento.Show();
                     this.Close();
                 }
