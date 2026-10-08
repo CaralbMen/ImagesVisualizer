@@ -34,7 +34,7 @@ namespace application
         {
             label1.Text = "Procesando imagen para: " + this.nombre;
             pcb_Img.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            show_gammaBar(false);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -141,18 +141,22 @@ namespace application
         }
         private void show_gammaBar(bool show)
         {
+            //lbl_0.BringToFront();
+            //lbl_1.BringToFront();
+            //lbl_2.BringToFront();
             btn_gamma.Visible = !show;
             level1.Visible = show;
             lbl_0.Visible = show;
             lbl_1.Visible = show;
             lbl_2.Visible = show;
+            //lbl_0.Show();
 
         }
         private void btn_gamma_Click(object sender, EventArgs e)
         {
             
             show_gammaBar(true);
-            processImage("gamma", "gamma0", 0);
+            //processImage("gamma", "gamma0", 0);
         }
 
         public static int[,,] GetRGBMatrix(Bitmap bmp)
@@ -222,18 +226,22 @@ namespace application
             {
                 processImage("gamma", "gamma2", 2);
             }
+            else
+            {
+                pcb_Img.Image = Image.FromFile(this.pathImage);
+            }
         }
 
         private void processImage(string file, string extension, double level = 0)
         {
             // Ejecutar script Python
             RunPythonScript(Path.Combine(this.repoRoot, "python_scripts", file+ ".py"), this.pathImage, level);
+
             // Rutas de salida generadas por el script se saca la extencion del archivo y se le agrega el _red, blue o green dependiendo del procesamiento
             string ext = Path.GetExtension(this.pathImage);
             string basePath = this.pathImage.Substring(0, this.pathImage.Length - ext.Length);
 
             string imgPath = basePath + "_"+ extension + ext;
-            MessageBox.Show("Imagen procesada: " + imgPath);
             pcb_Img.Image = Image.FromFile(imgPath);
         }
 

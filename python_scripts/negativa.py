@@ -35,7 +35,8 @@ negativeImage = 255 - grayImage
 base, ext = os.path.splitext(img_path)
 cv2.imwrite(base + "_negativa" + ext, negativeImage)
 
-print("Imagen negativa guardada correctamente. En" + base)
+#print("Imagen negativa guardada correctamente. En" + base)
+print("Imagen Procesada Correctamente")
 
 
 

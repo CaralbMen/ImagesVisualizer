@@ -34,4 +34,5 @@ if img is None:
 base, ext = os.path.splitext(img_path)
 cv2.imwrite(base + "_green" + ext, maskV)
 
-print("Capa verde guardada correctamente. En" + base)
+#print("Capa verde guardada correctamente. En" + base)
+print("Imagen Procesada Correctamente")

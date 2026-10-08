@@ -37,9 +37,13 @@ imgRGBGamma = gamma_correction(imgRGB, gamma)
 
 base, ext = os.path.splitext(img_path)
 
-cv2.imwrite(base + "_gamma"+ str(gamma) + ext, imgRGBGamma)
-
-print("Imagen gamma guardada correctamente. En" + base)
+if os.path.exists(base + "_gamma" + str(gamma) + ext):
+    #print("Imagen gamma guardada correctamente. En" + base)
+    print("Imagen Procesada Correctamente")
+else:
+    cv2.imwrite(base + "_gamma"+ str(gamma) + ext, imgRGBGamma)
+    #print("Imagen gamma guardada correctamente. En" + base)
+    print("Imagen Procesada Correctamente")
 
 
 

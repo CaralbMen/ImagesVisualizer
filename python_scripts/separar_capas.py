@@ -36,4 +36,5 @@ cv2.imwrite(base + "_red" + ext, R)
 cv2.imwrite(base + "_green" + ext, G)
 cv2.imwrite(base + "_blue" + ext, B)
 
-print("Capas RGB guardadas correctamente. En" + base)
+#print("Capas RGB guardadas correctamente. En" + base)
+print("Imagen Procesada Correctamente")

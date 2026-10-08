@@ -38,4 +38,5 @@ maskB = cv2.bitwise_and(img, img, mask= maskRoja)
 base, ext = os.path.splitext(img_path)
 cv2.imwrite(base + "_red" + ext, maskB)
 
-print("Capa roja guardada correctamente. En" + base)
+#print("Capa roja guardada correctamente. En" + base)
+print("Imagen Procesada Correctamente")

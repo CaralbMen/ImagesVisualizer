@@ -222,39 +222,35 @@
             this.level1.Name = "level1";
             this.level1.Size = new System.Drawing.Size(104, 56);
             this.level1.TabIndex = 14;
-            this.level1.Value = 3;
-            this.level1.Visible = false;
+            this.level1.Value = 10;
             this.level1.Scroll += new System.EventHandler(this.level1_Scroll);
             // 
             // lbl_0
             // 
-            this.lbl_0.Location = new System.Drawing.Point(347, 530);
+            this.lbl_0.Location = new System.Drawing.Point(347, 533);
             this.lbl_0.Name = "lbl_0";
             this.lbl_0.Size = new System.Drawing.Size(31, 38);
             this.lbl_0.TabIndex = 15;
             this.lbl_0.Text = "0";
             this.lbl_0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_0.Visible = false;
             // 
             // lbl_1
             // 
-            this.lbl_1.Location = new System.Drawing.Point(384, 534);
+            this.lbl_1.Location = new System.Drawing.Point(384, 537);
             this.lbl_1.Name = "lbl_1";
             this.lbl_1.Size = new System.Drawing.Size(25, 30);
             this.lbl_1.TabIndex = 16;
             this.lbl_1.Text = "1";
             this.lbl_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_1.Visible = false;
             // 
             // lbl_2
             // 
-            this.lbl_2.Location = new System.Drawing.Point(417, 530);
+            this.lbl_2.Location = new System.Drawing.Point(416, 533);
             this.lbl_2.Name = "lbl_2";
             this.lbl_2.Size = new System.Drawing.Size(31, 38);
             this.lbl_2.TabIndex = 17;
             this.lbl_2.Text = "2";
             this.lbl_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_2.Visible = false;
             // 
             // Procesamiento
             // 

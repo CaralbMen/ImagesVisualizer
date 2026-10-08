@@ -20,13 +20,16 @@ if img is None:
     sys.exit(1)
 
 
+
+
 imgHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 
 base, ext = os.path.splitext(img_path)
 cv2.imwrite(base + "_hsv" + ext, imgHSV)
 
-print("Imagen HSV guardada correctamente. En" + base)
+#print("Imagen HSV guardada correctamente. En" + base)
+print("Imagen Procesada Correctamente")
 
 
 
