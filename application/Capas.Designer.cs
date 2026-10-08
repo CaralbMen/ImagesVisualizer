@@ -220,7 +220,7 @@
             this.yeloww.AutoSize = true;
             this.yeloww.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.yeloww.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yeloww.Location = new System.Drawing.Point(704, 358);
+            this.yeloww.Location = new System.Drawing.Point(423, 635);
             this.yeloww.Name = "yeloww";
             this.yeloww.Size = new System.Drawing.Size(145, 25);
             this.yeloww.TabIndex = 26;
@@ -231,7 +231,7 @@
             this.Cian.AutoSize = true;
             this.Cian.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Cian.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cian.Location = new System.Drawing.Point(423, 635);
+            this.Cian.Location = new System.Drawing.Point(727, 358);
             this.Cian.Name = "Cian";
             this.Cian.Size = new System.Drawing.Size(120, 25);
             this.Cian.TabIndex = 27;
