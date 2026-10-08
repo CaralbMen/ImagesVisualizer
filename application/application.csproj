@@ -254,6 +254,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas.Designer.cs">
+      <DependentUpon>Capas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -281,6 +287,9 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Capas.resx">
+      <DependentUpon>Capas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
